@@ -1,5 +1,6 @@
 ### Linux ###
 *~
+*.sh
 
 # user experiments directory
 YOLOX_outputs/
