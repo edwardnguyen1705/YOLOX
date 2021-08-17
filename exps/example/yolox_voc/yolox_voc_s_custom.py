@@ -18,8 +18,10 @@ class Exp(MyExp):
         self.depth = 0.33
         self.width = 0.50
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
-        self.max_epoch = 50
-        self.eval_interval = 5
+        self.max_epoch = 100
+        self.eval_interval = 1
+        self.input_size = (416, 416)
+        self.test_size = (416, 416)
 
     def get_data_loader(self, batch_size, is_distributed, no_aug=False):
         from yolox.data import (
